@@ -5,13 +5,12 @@ Algoritmo exercirse_1
 	Leer N
 	Si  NO (N<=0) Entonces
 		Definir positives Como Entero
-		positives <- 0
 		Definir negatives Como Entero
-		negatives <- 0
 		Definir zeros Como Entero
+		positives <- 0
+		negatives <- 0
 		zeros <- 0
 		Definir num_response Como Entero
-		Definir response Como Cadena
 		Definir i Como Entero
 		i <- 0
 		Repetir
@@ -20,14 +19,11 @@ Algoritmo exercirse_1
 			Leer num_response
 			Si num_response>0 Entonces
 				positives <- positives+1
-				Escribir "Es positivo"
 			SiNo
 				Si num_response<0 Entonces
 					negatives <- negatives+1
-					Escribir "Es negativo"
 				SiNo
 					zeros <- zeros+1
-					Escribir "Es cero"
 				FinSi
 			FinSi
 		Hasta Que i=N
