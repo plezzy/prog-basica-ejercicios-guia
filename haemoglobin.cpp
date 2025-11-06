@@ -35,7 +35,10 @@ int main() {
     }
 
     double sum = 0.0;
-    for (int i = 0; i < m; ++i) suma += susceptibles[i];
+    for (int i = 0; i < m; ++i)
+	{
+		sum += susceptibles[i];	
+	} 
     double prom = sum / m;
 
     double suma_cuadrados = 0.0;
@@ -53,7 +56,7 @@ int main() {
         cout << susceptibles[i] << (i + 1 < m ? "  " : "\n");
     }
 
-    cout << "\nPromedio de hemoglobina: " << promedio << endl;
+    cout << "\nPromedio de hemoglobina: " << prom << endl;
     cout << "Desviacion tipica: " << dt << endl;
 
     delete[] hemo;
